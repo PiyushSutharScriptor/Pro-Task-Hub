@@ -191,3 +191,74 @@ ul li span:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 255, 0);
 }
+
+@media only screen and (max-width: 600px) {
+    .container1 {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .heading {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .box1 {
+        width: 100%;
+        padding: 1rem;
+        margin: 20px auto;
+        box-shadow: none;
+    }
+
+    .boxheading {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .boxheading img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .searchbox {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .boxheading button {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .mainlistheading {
+        font-size: 1.2rem;
+        margin: 1rem 0 0.5rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #listsContainer li {
+        font-size: 1rem;
+        padding: 0.5rem 1rem 0.5rem 2.5rem; /* remove 15vh */
+        position: relative;
+    }
+
+    ul li::before,
+    ul li.checked::before {
+        left: 5px; /* Previously 45px */
+        top: 6px;
+    }
+
+    ul li span {
+        right: 5px;
+        top: 5px;
+    }
+}
+
+
